@@ -20,7 +20,7 @@ export const AuthProvider = ({ children }) => {
             setUser(firebaseUser);
             setLoading(false);
         });
-        return unsubscribe; // відписуємось при розмонтуванні
+        return unsubscribe;
     }, []);
 
     const login = (email, password) =>
